@@ -1,0 +1,77 @@
+section.product-page-options{
+  margin: 0 auto 0;
+  padding: 6rem 1rem 0;
+  background: $white;
+  a{
+    background: $black;
+    margin: 0 1rem 1rem 0;
+    padding: 1rem;
+    position: relative;
+    transition: .5s;
+  }
+  a:hover{
+    transition: .3s;
+    background: $black2;
+    h3{
+      color: $lightblue;
+    }
+    .content{
+      transition: .3s;
+      color: $white;
+    }
+  }
+  h3{
+    color: $white;
+    display: inline-block;
+    border-top: 3px solid $red;
+  }
+  .chartist h3{
+    border-top: 3px solid $orange;
+  }
+  .elliott h3{
+    border-top: 3px solid $elliottblue;
+  }
+  .radar h3{
+    border-top: 3px solid $radarblue;
+  }
+  span{
+    font-size: .9rem;
+    margin: 1rem 0 3rem;
+    float:left;
+    display: block;
+    color: $gray;
+    transition: .3s;
+  }
+  .arrow{
+    color: $red;
+    clear: both;
+    margin: 1rem 0 0;
+    font-weight: $semibold;
+    font-size: 2rem;
+    text-align: left;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    position: absolute;
+    bottom: 0;
+  }
+  .chartist .arrow{
+    color: $orange;
+  }
+  .elliott .arrow{
+    color: $elliottblue;
+  }
+  .radar .arrow{
+    color: $radarblue;
+  }
+  @media (min-width: $tablet){
+    
+  }
+  @media (min-width: $desktop){
+    padding: 6rem 0 0;
+  }
+  @media (min-width: $oversized-desktop){
+        
+  }
+}

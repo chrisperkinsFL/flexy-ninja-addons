@@ -1,0 +1,53 @@
+section.product-page{
+  background: $black;
+  color: $white;
+  .center-contents{
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  .image-container{
+    margin: 4rem 0 0;
+    opacity: 0.8;
+    align-items: flex-end;
+    display: flex;
+  }
+  h1{
+    margin: 4rem 0 0;
+    font-weight: $semibold;
+    font-size: 2rem;
+  }
+  h1:before{
+    content: '';
+    width: 100px;
+    border: 6px solid $red;
+    display: block;
+  }
+  h1.chartist:before{
+    border: 6px solid $orange;
+  }
+  h1.elliott:before{
+    border: 6px solid $elliottblue;
+  }
+  h1.radar:before{
+    border: 6px solid $radarblue;
+  }
+  h2{
+    color: $black3;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  @media (min-width: $tablet){
+    h1{
+      font-size: 3rem;
+    }
+    h2{
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width: $desktop){
+ 
+  }
+  @media (min-width: $oversized-desktop){
+        
+  }
+}

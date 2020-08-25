@@ -1,0 +1,121 @@
+section.main-products{
+  .intro-wrapper{
+    background: $white;
+  }
+  span{
+    display: block;
+  }
+  .product img{
+    padding: 4rem;
+  }
+  .product{
+    background: $lightblue;
+    background: linear-gradient(75deg, rgba(255,255,255,1) 0%, rgba(234,239,243,1) 100%);
+    a{
+      color: $white;
+      float:right;
+      padding: 1.5rem 3rem;
+      font-weight: $bold;
+    }
+  } 
+  .harmonic a{
+    background: $red;
+  }
+  .chartist a{
+    background: $orange;
+  }
+  .elliott a{
+    background: $elliottblue;
+  }
+  .radartape a{
+    background: $radarblue;
+  }
+
+  //learn more link colors;
+  .product-description a{
+    display: block;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-weight: $semibold;
+  }
+  .harmonic-color{
+    color: $red;
+  }
+  .chartist-color{
+    color: $orange
+  }
+  .elliott-color{
+    color: $elliottblue;
+  }
+  .radar-color{
+    color: $radarblue;
+  }
+
+
+  .product-description-wrapper{
+    align-self: center;
+    padding: 4rem 2rem;
+  }
+  .product-number,
+  .product-name{
+    color: $black2;
+  }
+  .product-number{
+    font-size: 1.5rem;
+  }
+  .product-name{
+    font-size: 2rem;
+  }
+  .product-name{
+    font-weight: $semibold;
+  }
+
+  .intro-bartype-wrapper{
+    padding:4rem 2rem;
+    background: $white;
+  }
+
+  .bartype-wrapper{
+    background: $black;
+    .product-name{
+      color: $white;
+    }
+    .product-blurb{
+      color: $lightblue;
+    }
+    .bartype-color{
+      color: $yellow;
+    }
+    img{
+      padding: 4rem 4rem 0 0;
+    }
+    .bartype-buynow{
+      background: $yellow;
+      color: $black2;
+      margin: 2rem 0 0;
+      text-align: center;
+      padding: 1.5rem 3rem;
+      font-weight: $bold;
+    }
+  }
+  @media (min-width: $tablet){
+    //flips the products for desktop so the text/image order is consistent on mobile
+    .flip-for-desktop:nth-of-type(1) { order: 3; }
+    .product-description-wrapper{
+      padding: 4rem;
+    }
+    .intro-bartype-wrapper{
+      padding:6rem 0;
+      background: $white;
+    }
+    .harmonic{
+      border-top: 70px solid #EAEFF3;
+      margin: -70px 0 0;
+    }
+  }
+  @media (min-width: $desktop){
+  }
+  @media (min-width: $oversized-desktop){
+        
+  }
+}

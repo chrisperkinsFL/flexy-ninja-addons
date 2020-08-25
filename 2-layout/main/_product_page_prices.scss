@@ -1,0 +1,75 @@
+section.product-page-prices{
+  margin: 6rem auto 0;
+  padding: 6rem 1rem;
+  background: $black;
+ .container{
+   margin: 0 auto;
+ }
+ .sales-wrapper{
+   padding: 3rem;
+   background: $lightblue;
+   margin: 2rem;
+  -webkit-box-shadow: 0px -1px 52px -23px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -1px 52px -23px rgba(0,0,0,0.75);
+  box-shadow: 0px -1px 52px -23px rgba(0,0,0,0.75);
+ }
+ h5{
+   font-size: 2.5rem;
+   color: $black;
+ }
+ .sub-heading{
+   font-size: 1.5rem;
+   color: $gray2;
+ }
+ .cost{
+   font-weight: $bold;
+   font-style:  italic;
+   color: $red;
+   font-size: 3rem;
+   display: block;
+ }
+ .cost.chartist{
+   color: $orange;
+ }
+ .cost.elliott{
+   color: $elliottblue;
+ }
+ .cost.radar{
+  color: $radarblue;
+}
+ li{
+   margin: .5rem 0;
+ }
+ .button{
+   background: $red;
+   color: $white;
+   display: block;
+   text-align: center;
+   padding: 1rem;
+   text-transform: uppercase;
+   margin: 2rem 0 0;
+   font-weight: $semibold;
+ }
+ .button.chartist{
+   background: $orange;
+ }
+ .button.elliott{
+   background: $elliottblue;
+ }
+ .button.radar{
+  background: $radarblue;
+  }
+
+  @media (min-width: $tablet){
+    margin-top: 14rem;
+    .sales-wrapper{
+      margin-top: -10rem;
+    }
+  }
+  @media (min-width: $desktop){
+
+  }
+  @media (min-width: $oversized-desktop){
+        
+  }
+}

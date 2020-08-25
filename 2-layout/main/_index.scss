@@ -1,0 +1,28 @@
+section.main-intro{
+  background: $black;
+  color: $white;
+  clear:both;
+  .intro-wrapper{
+    height: 100%;
+  }
+  h1{
+    align-self: center;
+    font-weight: $semibold;
+    font-size: 1.5rem;
+    padding: 4rem;
+  }
+  .blue{
+    color: $blue;
+  }
+  @media (min-width: $tablet){
+    h1{
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: $desktop){
+    height: 50vh;   
+  }
+  @media (min-width: $oversized-desktop){
+        
+  }
+}

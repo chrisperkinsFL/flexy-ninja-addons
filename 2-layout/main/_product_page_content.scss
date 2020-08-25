@@ -1,0 +1,26 @@
+section.product-page-content{
+  margin: 0 auto;
+  padding: 0 1rem;
+  background: $white;
+  .center-contents{
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  p:first-child{
+    padding: 6rem 0 0;
+  }
+  p{
+    padding: 2rem 0 0;
+    line-height: 1.8rem;
+  }
+  
+  @media (min-width: $tablet){
+    
+  }
+  @media (min-width: $desktop){
+ 
+  }
+  @media (min-width: $oversized-desktop){
+        
+  }
+}

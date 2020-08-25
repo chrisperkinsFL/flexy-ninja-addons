@@ -1,0 +1,40 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: $white;
+  font-family: $primary-font;
+  color: $gray;
+}
+
+a{
+  text-decoration: none;
+}
+
+.db{
+  display: block;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.max-width{
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+input{
+  border: 0;
+  padding: 1rem;
+  margin: .25rem 0;
+  max-width: 300px;
+}
+
+p{
+  color: $gray2;
+}

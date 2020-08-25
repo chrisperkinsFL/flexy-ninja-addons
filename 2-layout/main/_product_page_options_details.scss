@@ -1,0 +1,59 @@
+section.product-page-options-details{
+  margin: 0 auto 0;
+  padding: 6rem 1rem 0;
+  background: $white;
+  .content-wrapper{
+    background: $lightblue;
+    padding: 2rem;
+  }
+  h4{
+    font-size: 1rem;
+    background: $red;
+    color: $white;
+    padding:1rem 1rem 1rem 2rem;
+    display:inline;
+    display: inline-block;
+  }
+  .chartist h4{
+    background: $orange;
+  }
+  .elliott h4{
+    background: $elliottblue;
+  }
+  .radar h4{
+    background: $radarblue;
+  }
+  p{
+    padding: 0 0 2rem;
+    line-height: 1.8rem;
+    &:last-child{
+      padding: 0;
+    }
+  }
+  .image-gallery{
+    background: $thumbnailbg;
+    padding: 1rem;
+  }
+  .image{
+    padding: 1rem;
+    opacity: .5;
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: $tablet){
+    .content-wrapper{
+      padding: 4rem;
+    }
+  }
+  @media (min-width: $desktop){
+    padding: 6rem 0 0;
+    h4{
+      padding: 1rem 0 1rem 4rem;
+    }
+  }
+  @media (min-width: $oversized-desktop){
+        
+  }
+}
