@@ -10,6 +10,23 @@
 </head>
 <body>
 
+  <nav class="menu-top">
+    <div class="flex-row max-width">
+      <div class="flex-6-12 logo">
+        <div class="nav-logo"><img src='img/logo.png'></div>
+      </div>
+      <div class="flex-6-12">
+          <div id="nav-icon-open" onclick="openNav()"><i class="material-icons">menu</i></div>
+          <div id="nav-icon-close" class="close" onclick="closeNav()"><i class="material-icons">close</i></div>
+            <ul id="menu">
+              <li><a href="about">About</a></li>
+              <li><a href="articles">Articles</a></li>
+              <li><a href="contact-us">Contact</a></li>
+            </ul>
+      </div>
+    </div>
+  </nav>
+
   <section class="product-page">
     <div class="flex-column max-width">
       <div class="center-contents">
@@ -73,12 +90,6 @@
         <p>Thanks to the Radar Tape, you can visualize iceberg orders directly on your chart. These orders are separated in 4 customizable categories, then displayed with the bid/ask information (in whole level perspective), and also with the total amount of contracts exchanged. The zones are indicated by a colored rectangle (which may be extended), to be seen more easily. Each category can be displayed/hidden and set individually.</p>
         <p>The display of these levels on the chart makes it easier to see the price on which it has had such strong trade and thus detect areas of support / resistance, break-out or acceleration phases. These are crucial information to confirm a level of S/R or to go out of your position without giving back all your gains.</p>
         <p>You can choose from 2 types of algorithms to detect Iceberg orders. The first, called Heavy, is best on very liquid instruments such as ES or FESX. It filters small exchanges passed between bigger. The second, called Light takes into account all orders and will work only on illiquid markets, such as the FCE or FDAX (depending on trading periods). These two algorithms analyze the volume of trades, their recurrence around the same level and their frequency to determine a good support / resistance price area.</p>
-
-        <div class="image-gallery flex-column-to-row">
-          <div class="image flex-4-12"><img src="img/harmonic/thumbnail-1.png"></div>
-          <div class="image flex-4-12"><img src="img/harmonic/thumbnail-1.png"></div>
-          <div class="image flex-4-12"><img src="img/harmonic/thumbnail-1.png"></div>
-        </div>
       </div>
     </div>
   </section>

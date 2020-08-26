@@ -4,11 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="lightbox/css/main.css">
+  <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Ninja Addons - Chartist Indicator</title>
 </head>
 <body>
+
+  <nav class="menu-top">
+    <div class="flex-row max-width">
+      <div class="flex-6-12 logo">
+        <div class="nav-logo"><img src='img/logo.png'></div>
+      </div>
+      <div class="flex-6-12">
+          <div id="nav-icon-open" onclick="openNav()"><i class="material-icons">menu</i></div>
+          <div id="nav-icon-close" class="close" onclick="closeNav()"><i class="material-icons">close</i></div>
+            <ul id="menu">
+              <li><a href="about">About</a></li>
+              <li><a href="articles">Articles</a></li>
+              <li><a href="contact-us">Contact</a></li>
+            </ul>
+      </div>
+    </div>
+  </nav>
 
   <section class="product-page">
     <div class="flex-column max-width">
@@ -87,9 +106,21 @@
         <p>The Chartist indicator recognizes : Double Top/Bottom, Triple Top/Bottom, Head and Shoulders, Cup With Handle, Symmetric Triangle, Ascending/Descending Triangle, Rectangle and Flag.</p>
         <p>For each pattern, you can display the Guide lines, the Projection Lines and also choose to display the Volumes.</p>
         <div class="image-gallery flex-column-to-row">
-          <div class="image flex-4-12"><img src="img/harmonic/thumbnail-1.png"></div>
-          <div class="image flex-4-12"><img src="img/harmonic/thumbnail-1.png"></div>
-          <div class="image flex-4-12"><img src="img/harmonic/thumbnail-1.png"></div>
+          <div class="image flex-4-12">
+            <a class="link-photo" data-lightbox="img" href="img/chartist/pattern-1.png" title="Chartist Pattern">
+              <img src="img/chartist/pattern-1.png" alt="Chartist Pattern">
+            </a>
+          </div>
+          <div class="image flex-4-12">
+            <a class="link-photo" data-lightbox="img" href="img/chartist/pattern-2.png" title="Chartist Pattern">
+              <img src="img/chartist/pattern-2.png" alt="Chartist Pattern">
+            </a>
+          </div>
+          <div class="image flex-4-12">
+            <a class="link-photo" data-lightbox="img" href="img/chartist/pattern-3.png" title="Chartist Pattern">
+              <img src="img/chartist/pattern-3.png" alt="Chartist Pattern">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -104,6 +135,11 @@
         <p><b>Audio alert:</b> An audio alert indicates if there is a complete pattern detected.</p>
         <p><b>Market Analyzer:</b> it is possible to configure the Market Analyzer so that you can find patterns on different time frames and different instruments.</p>
         <p><b>Exposed patterns in C#:</b> this feature is for advanced programmers who want to program their own automatic strategies, backtests or derived indicators.</p>
+        <div class="image flex-4-12">
+          <a class="link-photo" data-lightbox="img" href="img/chartist/features.jpg" title="Chartist Pattern">
+            <img src="img/chartist/features.jpg" alt="Chartist Pattern">
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -157,6 +193,18 @@
     </div>
   </section>
 
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Mini Lightbox Js -->
+<script src="lightbox/js/lightbox.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+  const lb = lightbox();
+  });
+</script>
 
 </body>
 </html>

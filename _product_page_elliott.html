@@ -4,12 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="lightbox/css/main.css">
+  <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Ninja Addons - Elliott Indicator</title>
 </head>
 <body>
 
+  <nav class="menu-top">
+    <div class="flex-row max-width">
+      <div class="flex-6-12 logo">
+        <div class="nav-logo"><img src='img/logo.png'></div>
+      </div>
+      <div class="flex-6-12">
+          <div id="nav-icon-open" onclick="openNav()"><i class="material-icons">menu</i></div>
+          <div id="nav-icon-close" class="close" onclick="closeNav()"><i class="material-icons">close</i></div>
+            <ul id="menu">
+              <li><a href="about">About</a></li>
+              <li><a href="articles">Articles</a></li>
+              <li><a href="contact-us">Contact</a></li>
+            </ul>
+      </div>
+    </div>
+  </nav>
+  
   <section class="product-page">
     <div class="flex-column max-width">
       <div class="center-contents">
@@ -72,9 +91,21 @@
         <p>By a single click on a button, the Elliott Indicators displays Bullish and / or Bearish countdowns, based on your settings.</p>
         <p>It analyze tops and bottoms found by a zigzag, and their sequence regarding the Elliott Theory, and shows you the countdown directly on the chart.</p>
         <div class="image-gallery flex-column-to-row">
-          <div class="image flex-4-12"><img src="img/harmonic/thumbnail-1.png"></div>
-          <div class="image flex-4-12"><img src="img/harmonic/thumbnail-1.png"></div>
-          <div class="image flex-4-12"><img src="img/harmonic/thumbnail-1.png"></div>
+          <div class="image flex-4-12">
+            <a class="link-photo" data-lightbox="img" href="img/elliott/automate-1.png" title="Elliott Automation">
+              <img src="img/elliott/automate-1.png" alt="Elliott Automation">
+            </a>
+          </div>
+          <div class="image flex-4-12">
+            <a class="link-photo" data-lightbox="img" href="img/elliott/automate-2.png" title="Elliott Automation">
+              <img src="img/elliott/automate-2.png" alt="Elliott Automation">
+            </a>
+          </div>
+          <div class="image flex-4-12">
+            <a class="link-photo" data-lightbox="img" href="img/elliott/automate-3.png" title="Elliott Automation">
+              <img src="img/elliott/automate-3.png" alt="Elliott Automation">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -153,6 +184,17 @@
     </div>
   </section>
 
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Mini Lightbox Js -->
+<script src="lightbox/js/lightbox.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+  const lb = lightbox();
+  });
+</script>
 
 </body>
 </html>

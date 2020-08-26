@@ -4,19 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="lightbox/css/main.css">
+  <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Ninja Addons - Harmonic Indicator</title>
 </head>
 <body>
 
+
+  <nav class="menu-top">
+    <div class="flex-row max-width">
+      <div class="flex-6-12 logo">
+        <div class="nav-logo"><img src='img/logo.png' /></div>
+      </div>
+      <div class="flex-6-12">
+          <div id="nav-icon-open" onclick="openNav()"><i class="material-icons">menu</i></div>
+          <div id="nav-icon-close" class="close" onclick="closeNav()"><i class="material-icons">close</i></div>
+            <ul id="menu">
+              <li><a href="about">About</a></li>
+              <li><a href="articles">Articles</a></li>
+              <li><a href="contact-us">Contact</a></li>
+            </ul>
+      </div>
+    </div>
+  </nav>
+  
   <section class="product-page">
     <div class="flex-column max-width">
       <div class="center-contents">
         <h1>Harmonic Indicator</h1>
         <h2>For Ninjatrader 8</h2>
         <div class="image-container">
-          <img src="img/harmonic/9-patterns-and-partial-patterns3.png">
+          <img src="img/harmonic/harmonic-1.png">
         </div>
       </div>
     </div>
@@ -87,9 +107,21 @@
         <p>For each pattern, you can display the Guide lines and choose to display the Volumes.</p>
 
         <div class="image-gallery flex-column-to-row">
-          <div class="image flex-4-12"><img src="img/harmonic/thumbnail-1.png"></div>
-          <div class="image flex-4-12"><img src="img/harmonic/thumbnail-1.png"></div>
-          <div class="image flex-4-12"><img src="img/harmonic/thumbnail-1.png"></div>
+          <div class="image flex-4-12">
+            <a class="link-photo" data-lightbox="img" href="img/harmonic/pattern-1.png" title="Powieksz zdjecie">
+              <img src="img/harmonic/pattern-1.png" alt="Harmonic Pattern 1">
+            </a>
+          </div>
+          <div class="image flex-4-12">
+            <a class="link-photo" data-lightbox="img" href="img/harmonic/pattern-2.png" title="Powieksz zdjecie">
+              <img src="img/harmonic/pattern-2.png" alt="Harmonic Pattern 2">
+            </a>
+          </div>
+          <div class="image flex-4-12">
+            <a class="link-photo" data-lightbox="img" href="img/harmonic/pattern-3.png" title="Powieksz zdjecie">
+              <img src="img/harmonic/pattern-3.png" alt="Harmonic Pattern 3">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -106,6 +138,11 @@
         <p><b>Market Analyzer:</b> it is possible to configure the Market Analyzer so that you can find harmonics patterns on different time frames and different instruments</p>
         <p><b>Exposed patterns in C#:</b> this feature is for advanced programmers who want to program their own automatic strategies, backtests or derived indicators.</p>
         <p><b>Display options:</b> for each figure, it is possible to view only its route, and/or its PRZ. Numeric price levels of the PRZ are displayed on the chart and can be hidden in one click directly from the toolbar</p>
+        <div class="image">
+          <a class="link-photo" data-lightbox="img" href="img/harmonic/features.jpg" title="Powieksz zdjecie">
+            <img src="img/harmonic/features.jpg" alt="Harmonic Pattern 1">
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -159,6 +196,16 @@
     </div>
   </section>
 
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
+<!-- Mini Lightbox Js -->
+<script src="lightbox/js/lightbox.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+  const lb = lightbox();
+  });
+</script>
 </body>
 </html>
