@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 254 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-125,-31.0765)">
+        <g transform="matrix(1,0,0,2.48381,1.61747,3.96287)">
+            <g transform="matrix(0.245848,0,0,0.0919711,110.126,-250.824)">
+                <path d="M182.924,2852.56L311.924,3110.56L53.924,3110.56L182.924,2852.56Z" style="fill:rgb(46,71,105);"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,2.48381,1.61747,3.96287)">
+            <g transform="matrix(0.213716,0,0,0.0398108,115.957,-89.4253)">
+                <path d="M182.924,2852.56L311.924,3110.56L53.924,3110.56L182.924,2852.56Z" style="fill:white;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,2.48381,1.61747,3.96287)">
+            <g transform="matrix(1.20356,0,0,0.484562,-467.001,-1859.23)">
+                <text x="547.258px" y="3888.38px" style="font-family:'BellMTBold', 'Bell MT', serif;font-weight:700;font-size:43.333px;fill:rgb(38,59,88);">P<tspan x="574.168px 586.182px 608.563px 630.945px 650.619px 669.848px 681.862px " y="3888.38px 3888.38px 3888.38px 3888.38px 3888.38px 3888.38px 3888.38px ">innacle</tspan></text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,2.48381,1.61747,3.96287)">
+            <g transform="matrix(0.519825,0,0,0.209285,-90.4334,-779.124)">
+                <text x="547.258px" y="3890.55px" style="font-family:'Roboto-Light', 'Roboto';font-weight:300;font-size:43.333px;fill:rgb(101,115,134);">P<tspan x="586.072px 626.686px 665.373px 700.337px 724.002px 761.801px 804.593px 828.258px 871.157px " y="3890.55px 3890.55px 3890.55px 3890.55px 3890.55px 3890.55px 3890.55px 3890.55px 3890.55px ">UBLISHING</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>

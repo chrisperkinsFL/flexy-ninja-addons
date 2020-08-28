@@ -1,0 +1,44 @@
+section.legal-intro{
+  background: $lightblue;
+  color: $black2;
+  clear:both;
+  .intro-wrapper{
+    height: 100%;
+  }
+  h1{
+    align-self: center;
+    font-weight: $semibold;
+    font-size: 1.25rem;
+  }
+  .blue{
+    color: $blue;
+  }
+  @media (min-width: $tablet){
+    h1{
+      font-size: 1.5rem;
+      line-height: 3rem;
+    }
+  }
+  @media (min-width: $desktop){
+    height: 10vh;   
+  }
+  @media (min-width: $oversized-desktop){
+        
+  }
+}
+
+article.legal-content{
+  margin: 4rem auto;
+  p{
+    margin: 2rem 0 0;
+  }
+  h4{
+    font-size: 1.5rem;
+    color: $black;
+    margin: 2rem 0 0;
+  }
+  .fw-bold{
+    color: $black;
+    font-weight: $bold;
+  }
+}

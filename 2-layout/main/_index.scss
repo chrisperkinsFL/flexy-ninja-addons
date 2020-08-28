@@ -6,6 +6,7 @@ section.main-intro{
     height: 100%;
   }
   h1{
+    letter-spacing: .03rem;
     align-self: center;
     font-weight: $semibold;
     font-size: 1.5rem;
@@ -16,12 +17,13 @@ section.main-intro{
   }
   @media (min-width: $tablet){
     h1{
-      font-size: 3rem;
-      line-height: 4rem;
+      font-size: 2.5rem;
+      line-height: 3.25rem;
+      margin: -4rem 0 0;
     }
   }
   @media (min-width: $desktop){
-    height: 50vh;   
+    height: 40vh;   
   }
   @media (min-width: $oversized-desktop){
         

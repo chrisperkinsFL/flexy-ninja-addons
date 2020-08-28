@@ -1,0 +1,56 @@
+footer{
+  .container{
+    border: 1px solid #eaeff3;
+    text-align: left;
+    margin: 0 auto;
+  }
+  margin: 4rem auto;
+  .address{
+    background: $lightblue;
+    color: $gray;
+    img{
+      width: 150px;
+      margin: 1rem 0;
+    }
+  }
+  .address,
+  .indicators,
+  .legal{
+    padding: 3rem;
+  }
+  .indicators,
+  .legal{
+    background: none;
+  }
+  h6{
+    color: $black2;
+    padding: 0 1rem;
+    font-size: 1.25rem;
+    font-weight: $semibold;
+  }
+  ul{
+    margin: .5rem 0;
+  }
+  a{
+    color: $gray2;
+  }
+  li{
+    padding: 0 1rem;
+  }
+  .copyright{
+    margin: 1rem auto 0 1rem;
+  }
+  .disclaimer p{
+    margin: 1rem 1rem 0;
+    font-size: .6rem;
+  }
+  @media (min-width: $tablet){
+   
+  }
+  @media (min-width: $desktop){
+ 
+  }
+  @media (min-width: $oversized-desktop){
+        
+  }
+}
