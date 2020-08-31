@@ -77,25 +77,28 @@ section.main-products{
   .intro-bartype-wrapper{
     padding:4rem 2rem;
     background: $black;
+    .product-description{
+      background: $yellow;
+    }
   }
 
   .bartype-wrapper{
     background: $black2;
     .product-name{
-      color: $white;
+      color: $black2;
     }
     .product-blurb{
-      color: $lightblue;
+      color: $black2;
     }
     .bartype-color{
-      color: $yellow;
+      color: $black2;
     }
     img{
       padding: 4rem 4rem 0 0;
     }
     .bartype-buynow{
-      background: $yellow;
-      color: $black2;
+      background: $black2;
+      color: $yellow;
       margin: 2rem 0 0;
       text-align: center;
       padding: 1.5rem 3rem;

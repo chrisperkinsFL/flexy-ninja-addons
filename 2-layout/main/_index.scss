@@ -1,31 +1,127 @@
 section.main-intro{
+  
   background: $black;
   color: $white;
   clear:both;
+  background: linear-gradient(75deg, $black 0%, $black2 100%);
   .intro-wrapper{
     height: 100%;
   }
+  
   h1{
     letter-spacing: .03rem;
     align-self: center;
     font-weight: $semibold;
     font-size: 1.5rem;
     padding: 4rem;
+    z-index: 999;
   }
   .blue{
     color: $blue;
   }
   @media (min-width: $tablet){
     h1{
-      font-size: 2.5rem;
-      line-height: 3.25rem;
+      font-size: 3rem;
+      line-height: 4rem;
       margin: -4rem 0 0;
+    }
+    .line{
+      position: absolute;
+      background: #233744;
+      width: 300px;
+      height: 60px;
+      left: -400px;
+      animation: mymove 10s infinite;
+      overflow: hidden;
+      margin: 1rem 0 0;
+      opacity: .4;
+      margin: 6vh 0 0;
+    }
+    
+    .line2{
+      position: absolute;
+      background: #233744;
+      width: 450px;
+      height: 80px;
+      left: -400px;
+      animation: mymove2 14s infinite;
+      overflow: hidden;
+      opacity: .4;
+      margin: 14vh 0 0;
+      animation-timing-function: ease;
+    }
+    
+    .line3{
+      position: absolute;
+      background: #233744;
+      width: 300px;
+      height: 60px;
+      left: -400px;
+      animation: mymove3 28s infinite;
+      overflow: hidden;
+      margin: 5rem 0 0;
+      opacity: .2;
+      margin: 30vh 0 0;
+    }
+
+    .line4{
+      position: absolute;
+      background: #385568;
+      width: 200px;
+      height: 2px;
+      left: -400px;
+      animation: mymove3 48s infinite;
+      overflow: hidden;
+      opacity: .4;
+      margin: 10vh 0 0;
+    }
+
+    .line5{
+      position: absolute;
+      background: #385568;
+      width: 200px;
+      height: 2px;
+      left: -400px;
+      animation: mymove3 39s infinite;
+      overflow: hidden;
+      margin: 5vh 0 0;
+      opacity: .6;
+      margin: 32vh 0 0;
+    }
+    
+    
+    @keyframes mymove {
+      0%   {left: -120%}
+      25%  {left: 110%;}
+      75%  {left: -20%;}
+      100% {left: -110%;}
+    }
+    
+    @keyframes mymove2 {
+      0%   {left: 110%;}
+      10%  {left: 110%}
+      35%{left: -40%}
+      50%{left: 30%}
+      70%{left: -40%}
+      100% {left: 110%; }
+    }
+    
+    @keyframes mymove3{
+      0%{left: -110%;}
+      10%{left: 80%}
+      20% {left: 110%}
+      40% {left: -120%}
+      50%{left: 110%;}
+      70%{left: -80%}
+      90% {left: 110%}
+      100% {left: -120%}
     }
   }
   @media (min-width: $desktop){
-    height: 40vh;   
+    height: 500px;   
   }
   @media (min-width: $oversized-desktop){
         
   }
 }
+
