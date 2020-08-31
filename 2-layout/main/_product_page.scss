@@ -3,7 +3,6 @@ section.product-page{
   color: $white;
   .center-contents{
     padding: 0 1rem;
-    margin: 0 auto;
   }
   .image-container{
     margin: 4rem 0 0;
@@ -19,17 +18,17 @@ section.product-page{
   h1:before{
     content: '';
     width: 100px;
-    border: 6px solid $red;
+    border: 2px solid $red;
     display: block;
   }
   h1.chartist:before{
-    border: 6px solid $orange;
+    border: 2px solid $orange;
   }
   h1.elliott:before{
-    border: 6px solid $elliottblue;
+    border: 2px solid $elliottblue;
   }
   h1.radar:before{
-    border: 6px solid $radarblue;
+    border: 2px solid $radarblue;
   }
   h2{
     color: $black3;
@@ -38,7 +37,7 @@ section.product-page{
   }
   @media (min-width: $tablet){
     h1{
-      font-size: 3rem;
+      font-size: 2rem;
     }
     h2{
       font-size: 1.5rem;

@@ -69,6 +69,8 @@ section.main-products{
   }
   .product-name{
     font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 0 0 1rem;
   }
   .product-name{
     font-weight: $semibold;
@@ -119,6 +121,9 @@ section.main-products{
     }
     .bartype-wrapper{
       margin: -10rem auto 0;
+      .product-description{
+        margin: -2rem 0;
+      }
     } 
   }
   @media (min-width: $desktop){

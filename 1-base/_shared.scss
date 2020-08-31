@@ -8,6 +8,10 @@ body{
   color: $gray;
 }
 
+.main-page-bg{
+  background-image: url(../img/bg13.png);
+}
+
 a{
   text-decoration: none;
 }
@@ -25,7 +29,7 @@ button:focus {
 
 .max-width{
   margin: 0 auto;
-  max-width: 1180px;
+  max-width: 1100px;
 }
 
 input{

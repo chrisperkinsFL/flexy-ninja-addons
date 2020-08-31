@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--fav icon links-->
   <link rel="apple-touch-icon" sizes="57x57" href="img/fav-icon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/fav-icon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/fav-icon/apple-icon-72x72.png">
@@ -19,19 +20,21 @@
   <link rel="manifest" href="img/fav-icon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="img/fav-icon/ms-icon-144x144.png">
+  <!--fav icon links end-->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="lightbox/css/main.css">
   <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <title>Ninja Addons - Elliott Indicator</title>
+  <title>Enhanced Renko and Volume Bars </title>
 </head>
 <body>
+
 
   <nav class="menu-top">
     <div class="flex-row max-width">
       <div class="flex-6-12 logo">
-        <div class="nav-logo"><img src='img/logo.png'></div>
+        <div class="nav-logo"><img src='img/logo.png' /></div>
       </div>
       <div class="flex-6-12">
           <div id="nav-icon-open" onclick="openNav()"><i class="material-icons">menu</i></div>
@@ -48,35 +51,47 @@
   <section class="product-page">
     <div class="flex-column max-width">
       <div class="center-contents">
-        <h1 class="elliott">Elliott Indicator</h1>
+        <h1>Enhanced Renko and Volume Bars</h1>
         <h2>For Ninjatrader 8</h2>
         <div class="image-container">
-          <img src="img/elliott/elliott-1.png">
+          <img src="img/bartype.png">
         </div>
       </div>
     </div>
   </section>
 
+  <section class="product-page-content max-width-1050">
+    <p>The Harmonic trading is a technique that uses the recognition of specific figures based on the Fibonacci ratios and applied on prices to determine the reversal points (potential reversal zone – PRZ) highly probable. As often in Chart analysis, the goal is to identify the figures, and the entry and exit of a position by the assumption that the price action in the past will happen again in the future.</p>
+
+    <p>One of the first references to Harmonic Trading can be found in the work of J. M. Hurst. It was developed and popularized by Scott M Carney, who  wrote several books about this subject, and few others, like for example Darren Oglesbee who discovered the Cypher pattern.</p>
+
+    <p>The important concept to understand is that the separate price movements of each other are actually related. In addition, the Fibonacci ratios and patterns on prices of their relationship provide a way to determine where the turning points will occur. When these points are identified correctly, trades are executed at a price level where the cycle is potentially changing.</p>
+
+    <p>These trades are executed “in harmony” with the market. Transactions are executed in areas where the rhythmic nature of the market is changing. In addition, these technical measures can provide a lot of technical information about the potential direction of future price action.</p>
+
+    <p>This is particularly evident when the calculation of several harmonics converge in a specific price zone, defining a support or resistance. This area is known as the “potential Reversal Zone” or (PRZ).</p>
+  </section>
+
   <section class="product-page-options max-width-1050">
-    <div class="flex-column-to-row elliott">
+    <div class="flex-column-to-row">
       <a href="#auto" class="flex-6-12">
-          <h3>Elliott made Simple</h3>
-          <span class="content">The complex, yet very effective Elliott theory will be a lot easier to apply, not for historical analysis, but for your real-time trading.</span>
+          <h3>Automation</h3>
+          <span class="content">The Harmonic Indicators detects automatically partials and valid harmonic patterns from your chart, in real time.</span>
           <span class="arrow"> > </span>
       </a>
         <a href="#patterns" class="flex-6-12">
-        <h3>Elliott Countdown</h3>
-        <span class="content">The Elliott Indicator detects automatically bullish and bearish Elliott countdown and displays it on your chart in real time.</span>
+        <h3>9 Patterns</h3>
+        <span class="content">ABCD, Bat, Butterfly, Crab, Cypher, Gartley, Shark, 5-0 and 3Drive.</span>
         <span class="arrow"> > </span>
       </a>
       <a href="#features" class="flex-6-12">
-        <h3>PRZs and ILVs</h3>
-        <span class="content">Elliott Indicator introduces the concept of PRZ and ILVs to help you identify potential Entry/Exit zones and level of confirmation.</span>
+        <h3>Features</h3>
+        <span class="content">Many features are available like : Volumes, Smart toolbar, Guide Lines, PRZs , Anticipation of pattern, Audio Alert, Market Analyzer and many more to come.</span>
         <span class="arrow"> > </span>
       </a>
       <a href="#settings" class="flex-6-12">
         <h3>Settings</h3>
-        <span class="content">Everything is configurable directly from the WPF toolbar, so you can change the parameters without reloading the chart.</span>
+        <span class="content">Everything is configurable directly from the embedded toolbar, so you can change the parameters without reloading the chart.</span>
         <span class="arrow"> > </span>
       </a>
     </div>
@@ -84,16 +99,14 @@
 
 
   <section class="product-page-options-details max-width-1050">
-    <div class="flex-column elliott" id="auto">
-      <h4>Elliott Made Simple</h4>
+    <div class="flex-column" id="auto">
+      <h4>Automate your Harmonic Trading</h4>
       <div class="content-wrapper">
-        <p>The Elliott theory applied rigidly, is very difficult to implement in real time. And there’s really no use to find a countdown when the trend is already over.</p>
-        <p>However, the use of this indicator can help you truly trade by applying the principles of this theory. You just have to open a chart, choose the type of countdown to display (bullish / bearish, or both), and adjust the zigzag. Adjust the zigzag’s speed so as to have waves of a size that is convenient for you to trade and that suits the volatility of the moment. And that’s it!</p>
-        <p>The indicator will detect automatically countdowns in progress, and you can use this information to place your Entry and/or Exit orders.</p>
-        <p>For example, you can wait for the appearance of the W2 PRZ. This area can be used as an entry area, which coupled with a level Iceberg spotted by the Radar Tape, will form an excellent entry level to trade the next impulse wave.
-          You can try to enter in a W2 and remain in position until it is invalidated, thanks to the ILVs. This way you can trade the W3 to its objective level.</p>
-        <p>You can also try to reinforce your position in a W4 pullback, in order to trade the movement until the end of the W5.</p>
-        <p>Once well mastered, the Elliott Indicator is a great tool to narrow your trading decisions, showing you the areas and levels with high potential, while showing you the general context (on an Elliott point of view) in which you are trading.</p>
+        <p>Applied manually Harmonic trading techniques can not be used on any time frame. The reason is that this technique is enormously time-consuming in terms of analysis. It is best to use on daily, weekly and monthly charts.</p>
+        <p>If you want to trade Harmonic patterns on lower time frames, you have to master the theory and be able to identifies patterns just by looking to the chart. You must know the exact ratio for each wave and for each pattern.</p>
+        <p>Or, you can use an automated tool to find Harmonic patterns in real-time, on any time frame and instrument like the Harmonic Indicator.</p>
+        <p>Sure, automation is rigid and not always right, in a sens that someone who master harmonic trading may find other patterns even if they are not 100% conform to the theory, by adding its own feeling and by taking into account the market context.</p>
+        <p>But automation is the first process to learn how to apply something theoretical and to help you avoid hesitation. With this tool, you have on your chart, in real-time whatever the time frame, every pattern conform to the theory. Then you can perform your own analysis by taking the context into account and other personal factors to decide either to enter or not in the market.</p>
 
       </div>
     </div>
@@ -101,25 +114,30 @@
 
 
   <section class="product-page-options-details max-width-1050">
-    <div class="flex-column elliott" id="patterns">
-      <h4>Elliott Countdown</h4>
+    <div class="flex-column" id="patterns">
+      <h4>9 Patterns and Partial Patterns</h4>
       <div class="content-wrapper">
-        <p>By a single click on a button, the Elliott Indicators displays Bullish and / or Bearish countdowns, based on your settings.</p>
-        <p>It analyze tops and bottoms found by a zigzag, and their sequence regarding the Elliott Theory, and shows you the countdown directly on the chart.</p>
+        <p>It can detect ABCD / Bat / Butterfly / Crab / Cypher / Gartley / Shark / 5-0 / 3Drive patterns.</p>
+        <p>The indicator can also show the figures before they are 100% valid (displayed in dash lines). Since the apparition of the preceding PRZ point, it is possible to know the future configuration to trade and thus to anticipate the entry point at the PRZ.</p>
+        <p>You can also disable this option to only show the valid patterns.</p>
+        <p>The PRZ is an area where prices have a high probability of recovery. According to the harmonic theory, this zone is the optimal entry point to enter the initial movement with a low risk of failure. The indicator respects the theory, but it is possible to add a degree of freedom by allowing to exceed this area without compromising the validation of the pattern.</p>
+        <p>Similarly, it is possible to define a theoretical error margin around the exact level of each anchor of the pattern.</p>
+        <p>For each pattern, you can display the Guide lines and choose to display the Volumes.</p>
+
         <div class="image-gallery flex-column-to-row">
           <div class="image flex-4-12">
-            <a class="link-photo" data-lightbox="img" href="img/elliott/automate-1.png" title="Elliott Automation">
-              <img src="img/elliott/automate-1.png" alt="Elliott Automation">
+            <a class="link-photo" data-lightbox="img" href="img/harmonic/pattern-1.png" title="Powieksz zdjecie">
+              <img src="img/harmonic/pattern-1.png" alt="Harmonic Pattern 1">
             </a>
           </div>
           <div class="image flex-4-12">
-            <a class="link-photo" data-lightbox="img" href="img/elliott/automate-2.png" title="Elliott Automation">
-              <img src="img/elliott/automate-2.png" alt="Elliott Automation">
+            <a class="link-photo" data-lightbox="img" href="img/harmonic/pattern-2.png" title="Powieksz zdjecie">
+              <img src="img/harmonic/pattern-2.png" alt="Harmonic Pattern 2">
             </a>
           </div>
           <div class="image flex-4-12">
-            <a class="link-photo" data-lightbox="img" href="img/elliott/automate-3.png" title="Elliott Automation">
-              <img src="img/elliott/automate-3.png" alt="Elliott Automation">
+            <a class="link-photo" data-lightbox="img" href="img/harmonic/pattern-3.png" title="Powieksz zdjecie">
+              <img src="img/harmonic/pattern-3.png" alt="Harmonic Pattern 3">
             </a>
           </div>
         </div>
@@ -129,29 +147,31 @@
 
 
   <section class="product-page-options-details max-width-1050">
-    <div class="flex-column elliott" id="features">
-      <h4>PRZs and ILVs</h4>
+    <div class="flex-column" id="features">
+      <h4>Various Features</h4>
       <div class="content-wrapper">
-        <p><b>Boost Entry & Amp; Exit Confidence With PRZ and ILVs</b></p>
-        <p>The Elliott Indicator introduces the concept of PRZ (from the Harmonic Theory) to help find good entry points and objectives zones. It is an area where prices should (at least) pause on a corrective or impulsive wave.</p>
-        <p>ILVs (Invalidation/Limit/Validation) levels allow you to view at any time, at which price the wave is validate or not. The term limit is the border between two waves. Eg w2b becomes a w3 or w3.1 if it exceeds the limit level (usually the top of w1).</p>
+        <p>The Harmonic Indicator comes with various features such as :</p>
+        <p><b>Partial Patterns and PRZ</b></p>
+        <p><b>Audio alert:</b> An audio alert indicates if there is a partial or complete pattern detected.</p>
+        <p><b>Market Analyzer:</b> it is possible to configure the Market Analyzer so that you can find harmonics patterns on different time frames and different instruments</p>
+        <p><b>Exposed patterns in C#:</b> this feature is for advanced programmers who want to program their own automatic strategies, backtests or derived indicators.</p>
+        <p><b>Display options:</b> for each figure, it is possible to view only its route, and/or its PRZ. Numeric price levels of the PRZ are displayed on the chart and can be hidden in one click directly from the toolbar</p>
+        <div class="image">
+          <a class="link-photo" data-lightbox="img" href="img/harmonic/features.jpg" title="Powieksz zdjecie">
+            <img src="img/harmonic/features.jpg" alt="Harmonic Pattern 1">
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
 
   <section class="product-page-options-details max-width-1050">
-    <div class="flex-column elliott" id="settings">
+    <div class="flex-column" id="settings">
       <h4>Smart Toolbar</h4>
       <div class="content-wrapper">
-        <p>Customize Everything With The Smart Toolbar</p>
-        <p><b>In order not to overload the chart with too much information at the same time, we have created a toolbar that allows you to display or hide in only one click, the different information about the Elliott Indicator. That way, you can:</b> </p>
-        <p>Display or Hide bullish / bearish countdowns independently.</p>
-        <p>Display or Hide ILVs levels that allow you to know the important levels on the current countdown.</p>
-        <p>Display or Hide PRZs area, which are, according to the theory, important zones of reversal.</p>
-        <p>Display or Hide the zigzag used to calculate the countdown.</p>
-        <p>Modify in real-time, the parameters of the zigzag, like its speed, its type and its price level used in its calculations (HL or Input).</p>
-        <p>All of this, without reloading the chart for faster analysis.</p>
+        <p>The toolbar allows you in only one-click to display or hide different chartist patterns detected. So you can focus on one type of pattern, or trade only the last pattern found by hiding the others and get the chart lighter.</p>
+        <p>The toolbar is also retractable or can be dettached in a separate window to avoid overloading the main toolbar.</p>
       </div>
     </div>
   </section>
@@ -162,40 +182,34 @@
       <div class="flex-6-12 sales-wrapper">
         <h5>Trial</h5>
           <span class="sub-heading">TRY FULL VERSION FOR 7 DAYS</span>
-          <span class="cost elliott">$1</span>
+          <span class="cost">$1</span>
             <ul>
-              <li>No risk. Try it for 7 days</li>
-              <li>Bullish/Bearish Counts</li>
+              <li>No risk. Try it for 14 days</li>
+              <li>9 Harmonic Patterns</li>
               <li>Display Guide and Zones</li>
               <li>WPF GUI toolbar</li>
               <li>Market Scanner</li>
               <li>Access to Member Area</li>
-              <li>45+ Page User Manual</li>
-              <li>8 video tutorials</li>
+              <li>7 video tutorials</li>
               <li>Include Chart Templates</li>
-              <li>Include Scanner Templates</li>
-              <li>Trial available on NT8 (and NT7 with less features)</li>
             </ul>
-          <a href="" class="button elliott">Start Your Trial</a>
+          <a href="" class="button">Start Your Trial</a>
       </div>
       <div class="flex-6-12 sales-wrapper">
         <h5>Lifetime</h5>
           <span class="sub-heading">FULL VERSION</span>
-          <span class="cost elliott">$697</span>
+          <span class="cost">$697</span>
             <ul>
               <li>100% FREE Updates and Upgrades</li>
-              <li>Bullish/Bearish Counts</li>
+              <li>9 Harmonic Patterns</li>
               <li>Display Guide and Zones</li>
               <li>WPF GUI toolbar</li>
               <li>Market Scanner</li>
               <li>Access to Member Area</li>
-              <li>45+ Page User Manual</li>
-              <li>8 video tutorials</li>
+              <li>7 video tutorials</li>
               <li>Include Chart Templates</li>
-              <li>Include Scanner Templates</li>
-              <li>Trial available on NT8 (and NT7 with less features)</li>
             </ul>
-          <a href="" class="button elliott">Get the full Version</a>
+          <a href="" class="button">Get the full Version</a>
       </div>
     </div>
   </section>
@@ -246,8 +260,8 @@
     </div>
 
   </footer>
-  
-  <!-- jQuery -->
+
+<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 <!-- Mini Lightbox Js -->
@@ -258,6 +272,5 @@
   const lb = lightbox();
   });
 </script>
-
 </body>
 </html>
