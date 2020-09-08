@@ -1,6 +1,10 @@
 section.main-products{
   .intro-wrapper{
+    margin: 14rem auto;
     background: $white;
+    &:first-child{
+      margin-top: 0 !important;
+    }
   }
   span{
     display: block;
@@ -22,17 +26,81 @@ section.main-products{
   .elliott{
     background: linear-gradient(75deg, rgba(234,239,243,1) 0%, rgba(255,255,255,1) 100%);
   }
-  .harmonic a{
+  a.harmonic{
     background: $red;
+    padding: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 3rem !important;
+    transition: .5s;
+    &:hover{
+      transition: .5s;
+      padding-left: 3rem;
+      background: $red-hover;
+    }
   }
-  .chartist a{
+  a.chartist{
     background: $orange;
+    padding: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 3rem !important;
+    transition: .5s;
+    &:hover{
+      transition: .5s;
+      padding-left: 3rem;
+      background: $orange-hover;
+    }
   }
-  .elliott a{
+  a.elliott{
     background: $elliottblue;
+    padding: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 3rem !important;
+    transition: .5s;
+    &:hover{
+      transition: .5s;
+      padding-left: 3rem;
+      background: $elliottblue-hover;
+    }
   }
-  .radartape a{
+  a.radartape{
     background: $radarblue;
+    padding: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 3rem !important;
+    transition: .5s;
+    &:hover{
+      transition: .5s;
+      padding-left: 3rem;
+      background: $radarblue-hover;
+    }
+  }
+
+  .harmonic-description{
+    background: $black2;
+    color: #fff;
+    margin-bottom: -4rem;
+  }
+
+  .chartist-description{
+    background: $black2;
+    color: #fff;
+    margin-bottom: -4rem;
+  }
+
+  .elliott-description{
+    background: $black2;
+    color: #fff;
+    margin-bottom: -4rem;
+  }
+
+  .radar-description{
+    background: $black2;
+    color: #fff;
+    margin-bottom: -4rem;
   }
 
   //learn more link colors;
@@ -59,10 +127,6 @@ section.main-products{
   .product-description-wrapper{
     align-self: center;
     padding: 4rem 2rem;
-  }
-  .product-number,
-  .product-name{
-    color: $black2;
   }
   .product-number{
     font-size: 1.5rem;
@@ -109,7 +173,7 @@ section.main-products{
   }
   @media (min-width: $tablet){
 
-    margin: -4rem auto 0;
+    margin: -12rem auto 0;
     //flips the products for desktop so the text/image order is consistent on mobile
     .flip-for-desktop:nth-of-type(1) { order: 3; }
     .product-description-wrapper{
@@ -117,7 +181,7 @@ section.main-products{
     }
     .intro-bartype-wrapper{
       padding:6rem 0;
-      margin: 10rem auto 0;
+      margin: 20rem auto 0;
     }
     .bartype-wrapper{
       margin: -10rem auto 0;
@@ -125,6 +189,9 @@ section.main-products{
         margin: -2rem 0;
       }
     } 
+    .product-number{
+      font-size: 3rem;
+    }
   }
   @media (min-width: $desktop){
   }

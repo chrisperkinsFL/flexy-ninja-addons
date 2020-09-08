@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/cooltext.animations.js"></script>
+  <script type="text/javascript" src="js/cooltext.min.js"></script>
   <link rel="apple-touch-icon" sizes="57x57" href="img/fav-icon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/fav-icon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/fav-icon/apple-icon-72x72.png">
@@ -26,20 +30,20 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Ninja Addons</title>
 </head>
-<body class="main-page-bg">
+<body>
 
   <nav class="menu-top">
     <div class="flex-row max-width-1050">
       <div class="flex-6-12 logo">
-        <div class="nav-logo"><a href="_index.html"><img src='img/logo.png'></a></div>
+        <div class="nav-logo"><img src='img/logo.png'></div>
       </div>
       <div class="flex-6-12">
           <div id="nav-icon-open" onclick="openNav()"><i class="material-icons">menu</i></div>
           <div id="nav-icon-close" class="close" onclick="closeNav()"><i class="material-icons">close</i></div>
             <ul id="menu">
-              <li><a href="_about.html">About</a></li>
-              <li><a href="_articles.html">Articles</a></li>
-              <li><a href="_legal_privacy_policy.html">Privacy</a></li>
+              <li><a href="about">About</a></li>
+              <li><a href="articles">Articles</a></li>
+              <li><a href="contact-us">Contact</a></li>
             </ul>
       </div>
     </div>
@@ -48,72 +52,72 @@
 
   <section class="main-intro">
     <div class="flex-row intro-wrapper max-width-1050">
-      <div class="line"></div>
+      <!--<div class="line"></div>
       <div class="line2"></div>
       <div class="line3"></div>
       <div class="line4"></div>
-      <div class="line5"></div>
-      <h1>We provide you with <span class="blue">high quality</span> software to make you a NinjaTrader Master. </h1>
+      <div class="line5"></div>-->
+      <h1><span id="animate">We provide you with </span><span class="blue" id="animate-2">&nbsp;high quality</span> <span id="animate-3">software to make you a NinjaTrader Master</span><span class="blue" id="animate-4">.</span> </h1>
     </div>
   </section>
 
   <section class="main-products">
     <div class="flex-column-to-row intro-wrapper max-width-1050">
-      <div class="product flex-6-12 harmonic">
+      <div class="product flex-7-12 harmonic">
         <img src="img/harmonic.png">
-        <a href="_product_page_harmonic.html#buy-now">BUY NOW ></a>
       </div>
-      <div class="product-description flex-6-12 flex-row">
+      <div class="product-description harmonic-description flex-5-12 flex-row">
         <div class="product-description-wrapper">
           <span class="product-number">01</span>
           <span class="product-name">Harmonic Indicator</span>
           <span class="product-blurb">Applied manually Harmonic trading techniques can not be used on any time frame. The reason is that this technique is enormously time-consuming in terms of analysis. It is best to use on daily, weekly and monthly charts.</span>
           <a href="_product_page_harmonic.html" class="harmonic-color">Learn More &#8594;</a>
+          <a href="" class="harmonic">BUY NOW ></a>
         </div>
       </div>
     </div>
 
     <div class="flex-column-to-row intro-wrapper max-width-1050">
-      <div class="product flex-6-12 flip-for-desktop chartist">
+      <div class="product flex-7-12 flip-for-desktop chartist">
         <img src="img/chartist.png">
-        <a href="_product_page_chartist.html#buy-now">BUY NOW ></a>
       </div>
-      <div class="product-description flex-6-12 flip-for-desktop flex-row">
+      <div class="product-description chartist-description flex-5-12 flip-for-desktop flex-row">
         <div class="product-description-wrapper">
           <span class="product-number">02</span>
           <span class="product-name">Chartist Indicator</span>
           <span class="product-blurb">Chartist Analysis is a technique that uses the recognition of specific figures based on major pivot points. Unlike Harmonic Theory, it is not based on the Fibonacci but rather on the pattern itself and help to better understand the psychology of the market at a certain moment.</span>
           <a href="_product_page_chartist.html" class="chartist-color">Learn More &#8594;</a>
+          <a href="" class="chartist">BUY NOW ></a>
         </div>
       </div>
     </div>
 
     <div class="flex-column-to-row intro-wrapper max-width-1050">
-      <div class="product flex-6-12 elliott">
+      <div class="product flex-7-12 elliott">
         <img src="img/elliott.png">
-        <a href="_product_page_elliott.html#buy-now">BUY NOW ></a>
       </div>
-      <div class="product-description flex-6-12 flex-row">
+      <div class="product-description elliott-description flex-5-12 flex-row">
         <div class="product-description-wrapper">
           <span class="product-number">03</span>
           <span class="product-name">Elliott Indicator</span>
           <span class="product-blurb">The indicator will detect automatically countdowns in progress, and you can use this information to place your Entry and/or Exit orders.</span>
           <a href="_product_page_elliott.html" class="elliott-color">Learn More &#8594;</a>
+          <a href="" class="elliott">BUY NOW ></a>
         </div>
       </div>
     </div>
     
     <div class="flex-column-to-row intro-wrapper max-width-1050">
-      <div class="product flex-6-12 flip-for-desktop radartape">
+      <div class="product flex-7-12 flip-for-desktop radartape">
         <img src="img/radartape.png">
-        <a href="_product_page_radar.html#buy-now">BUY NOW ></a>
       </div>
-      <div class="product-description flex-6-12 flip-for-desktop flex-row">
+      <div class="product-description radar-description flex-5-12 flip-for-desktop flex-row">
         <div class="product-description-wrapper">
           <span class="product-number">04</span>
           <span class="product-name">Radartape Indicator</span>
           <span class="product-blurb">Tаре rеаdіng іѕ mоrе оf аn аrt thаn а ѕсіеnсе. It іѕ nоt dіffісult tо lеаrn, but іn оrdеr tо gеt thе fееl оf іt, уоu ѕhоuld wаtсh іt lіvе аѕ muсh аѕ роѕѕіblе durіng thе nоrmаl mаrkеt hоurѕ.</span>
           <a href="_product_page_radar.html" class="radar-color">Learn More &#8594;</a>
+          <a href="" class="radartape">BUY NOW ></a>
         </div>
       </div>
     </div>
@@ -138,16 +142,16 @@
   <footer>
     <div class="flex-column-to-row max-width-1050 container">
       <div class="flex-3-12 address">
-        <img src="img/pinnacle.svg">
-    
+        <img src="img/pinnacle.svg"><br />
+        
       </div>
       <div class="flex-4-12 indicators">
           <h6>Indicators</h6>
           <ul>
-            <li><a href="_product_page_harmonic.html">Harmonic</a></li>
-            <li><a href="_product_page_chartist.html">Chartist</a></li>
-            <li><a href="_product_page_elliott.html">Elliott</a></li>
-            <li><a href="_product_page_radar.html">Radartape</a></li>
+            <li><a href="harmonic">Harmonic</a></li>
+            <li><a href="chartsist">Chartist</a></li>
+            <li><a href="elliott">Elliott</a></li>
+            <li><a href="radar">Radartape</a></li>
             <li><a href="bundle">Enhanced Renko & Volume Bars</a></li>
           </ul>
       </div>
@@ -179,5 +183,31 @@
     </div>
 
   </footer>
+  <script>
+  $("#animate").cooltext({
+    sequence:[
+       {action:"animation", animation:"cool29", elements:"letters", speed: 200, delay: 0}
+    ]
+ });
+
+ $("#animate-2").cooltext({
+    sequence:[
+       {action:"animation", animation:"cool29", elements:"letters", speed: 500, delay: .4}
+    ]
+ });
+
+ $("#animate-3").cooltext({
+    sequence:[
+       {action:"animation", animation:"cool29", elements:"letters", speed: 500, delay: .7}
+    ]
+ });
+
+ $("#animate-4").cooltext({
+    sequence:[
+       {action:"animation", animation:"cool22", delay: 2.5}
+    ]
+ });
+
+</script>
 </body>
 </html>

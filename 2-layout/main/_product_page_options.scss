@@ -9,6 +9,12 @@ section.product-page-options{
     position: relative;
     transition: .5s;
   }
+  .icon{
+    opacity: .6;
+    width: 50px;
+    margin: 0 0 2rem;
+    display: block;
+  }
   a:hover{
     transition: .3s;
     background: $black2;
